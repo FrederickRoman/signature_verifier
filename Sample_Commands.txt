@@ -1,0 +1,19 @@
+Image naming convention:
+[label]_[author]_im[imNum]_(cutoff_CUTOFF).bmp
+For example:
+Fake_Fred_im1_cutoff_100.bmp
+Real_Will_im57.bmp
+
+
+This will crop the images from pages 1-2 of Willy and prepend the word "Fake":
+cropSignaturesFromScans('Willy', 'Fake', 'Willy', 1, 2)
+This will crop the images from pages 1-10 of Will and prepend the word "Real":
+cropSignaturesFromScans('Will', 'Real', 'Will', 1, 10)
+
+This will set the blackness cutoff for images 1-20 starting with "Fake_Min" to 120:
+saveVaryingHardnessImages('Fake_Min',1,20, 120)
+This will set the blackness cutoff for images 1-100 starting with "Fake_Min" to 100:
+saveVaryingHardnessImages('Real_Will',1,100, 100)
+
+sfn=getSignatureFilenames({'Real' 'Fake' 'Fake' 'Fake'}, {'Will' 'Fred' 'Min' 'Willy'}, [1 1 1 1], [100 20 20 20], 100)
+A=createHashAndClassificationTable(@getPerceptualHash,sfn)

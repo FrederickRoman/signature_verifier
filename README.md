@@ -34,6 +34,6 @@ future examples as either authentic or forged.
 
 ## Results:
 ![Heat Map]("./DFFT heat map.JPG")
-![Heat Map]("./DFFT heat map.JPG")
-![Heat Map]("./DFFT heat map.JPG")
-![Heat Map]("./DFFT heat map.JPG")
+![Real Signature]("./Real_Will_p4_im7.png")
+![Reconstructed grayscale]("./Reconstructed grayscale without pure DC using 128 freqs.png")
+![Signature verifier results]("./signature verifier results.JPG")

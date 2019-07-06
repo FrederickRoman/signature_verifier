@@ -33,7 +33,24 @@ future examples as either authentic or forged.
            If later on you want to reverse this all you need to is to comment 46 and uncomment 47.
 
 ## Results:
-![Heat Map](https://github.com/FrederickRoman/signature_verifier/blob/master/DFFT%20heat%20map.JPG)
-![Real Signature](https://github.com/FrederickRoman/signature_verifier/blob/master/Real_Will_p4_im7.png)
-![Reconstructed grayscale](https://github.com/FrederickRoman/signature_verifier/blob/master/Reconstructed%20grayscale%20without%20pure%20DC%20using%20128%20freqs.png)
-![Signature verifier results](https://github.com/FrederickRoman/signature_verifier/blob/master/signature%20verifier%20results.JPG)
+<div>
+	<div style="display:flex; flex-direction:column;">
+	<img width=100% height=100% src="https://github.com/FrederickRoman/signature_verifier/blob/master/Real_Will_p4_im7.png">
+		<div>Real Signature from training data set</div>
+	</div>
+</div>
+
+<div style="display:flex; flex-direction:row;">
+	<img width="100%" height="100%" src="https://github.com/FrederickRoman/signature_verifier/blob/master/DFFT%20heat%20map.JPG">
+	DCT (Discrete Cosine Transform) on a typical signature. The image energy scale of signatures shows greater frequency content in the lowest frequencies (top left corner), even more so than a typical image.
+	<div style="display:flex; flex-direction:column;" > 
+		<img  width=100% height=100% src="https://github.com/FrederickRoman/signature_verifier/blob/master/Reconstructed%20grayscale%20without%20pure%20DC%20using%20128%20freqs.png">
+		<div >Reconstructed grayscale after filtering out less energetic frequencies </div>
+	</div>	
+	
+</div>
+
+<div>
+	<img  width="100%" height="100%" src="https://github.com/FrederickRoman/signature_verifier/blob/master/signature%20verifier%20results.JPG">
+	Signature verifier results
+</div>
